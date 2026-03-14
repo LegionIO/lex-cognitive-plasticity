@@ -92,12 +92,12 @@ module Legion
 
           def plasticity_report
             {
-              total_pathways:       @pathways.size,
-              critical_period:      @critical_period,
-              average_strength:     average_strength,
-              average_plasticity:   average_plasticity,
-              prune_candidates:     prune_candidates_count,
-              strongest:            strongest_pathways(limit: 3).map(&:to_h)
+              total_pathways:     @pathways.size,
+              critical_period:    @critical_period,
+              average_strength:   average_strength,
+              average_plasticity: average_plasticity,
+              prune_candidates:   prune_candidates_count,
+              strongest:          strongest_pathways(limit: 3).map(&:to_h)
             }
           end
 
